@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TaxApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="TaxApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,17 +71,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" customizationIdentifier="" id="QSv-Pi-7Iz" customClass="totalButtonTapped" customModule="totalButtonTapped">
-                        <centerItemGroups>
-                            <barButtonItemGroup customizationDisposition="fixed" id="Tzq-3C-HCC">
-                                <barButtonItems>
-                                    <barButtonItem title="Item" id="cQS-Up-WbE"/>
-                                </barButtonItems>
-                            </barButtonItemGroup>
-                        </centerItemGroups>
                         <barButtonItem key="rightBarButtonItem" title="合計" id="sAB-qK-gxR">
                             <connections>
                                 <action selector="totalButtonTapped:" destination="BYZ-38-t0r" id="iXR-nr-7ju"/>
-                                <segue destination="1g9-fU-D00" kind="show" id="uGh-BD-fyL"/>
+                                <segue destination="1g9-fU-D00" kind="show" id="y3d-z7-Usp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
