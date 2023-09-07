@@ -39,11 +39,11 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     
     
     
-    
-    @IBOutlet weak var totalButtonTapped: UINavigationItem!
     @IBAction func totalButtonTapped(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "showTotal", sender: nil)
     }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showTotal" {
             let destinationVC = segue.destination as! TotalViewController
